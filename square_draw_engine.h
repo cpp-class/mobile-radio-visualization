@@ -7,5 +7,7 @@ void sd_horizontal_line(int x, int y, int size, int space, int num_sq, Color col
 
 void sd_vertical_line(int x, int y, int size, int space, int num_sq, Color color);
 
+void sd_rectangle(int x, int y, int sq_size, int sq_space, int width, int height, Color color);
+
 
 #endif /* SQUARE_DRAW_ENGINE_H_ */

@@ -24,9 +24,10 @@ int main(void)
 
             ClearBackground(RAYWHITE);
 
-            sd_horizontal_line(50, 50, 20, 10, 10, GREEN);
+//            sd_horizontal_line(50, 50, 20, 10, 10, GREEN);
+//            sd_vertical_line(50, 50, 18, 10, 12, RED);
 
-            sd_vertical_line(50, 50, 18, 10, 12, RED);
+            sd_rectangle(50, 50, 10, 1, 30, 18, RED);
 
             DrawFPS(10, 10);
 
