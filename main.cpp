@@ -1,5 +1,34 @@
 #include "raylib.h"
 
+// horizontal
+void sd_horizontal_line(int x, int y, int size, int space, int num_sq, Color color)
+{
+
+	int cnt {0};
+
+	while (cnt != num_sq)
+	{
+	    DrawRectangle(x, y, size, size, color);
+
+	    x += size + space;
+		cnt = cnt + 1;
+	}
+
+}
+
+void sd_vertical_line(int x, int y, int size, int space, int num_sq, Color color)
+{
+	int cnt {0};
+
+	while (cnt != num_sq)
+	{
+	    DrawRectangle(x, y, size, size, color);
+
+	    y += size + space;
+		cnt = cnt + 1;
+	}
+}
+
 int main(void)
 {
     // Initialization
@@ -22,6 +51,10 @@ int main(void)
         BeginDrawing();
 
             ClearBackground(RAYWHITE);
+
+            sd_horizontal_line(50, 50, 20, 10, 10, GREEN);
+
+            sd_vertical_line(50, 50, 18, 10, 12, RED);
 
             DrawFPS(10, 10);
 
