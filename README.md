@@ -1,12 +1,7 @@
-# Bouncing Ball
-Bouncing Ball based on Raylib (prebuild library for Win64)
+# Drawing Engine using Squares!
+Draw some shapes using small squares. 
 
-Compiled with `winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64-9.0.0-r3`
-
-Library compiled with `GRAPHICS = GRAPHICS_API_OPENGL_21` switch.
-
-## Build for Linux
-Linux library is added to `lib\linux` and can be using `debuglinux configuration` in eclipse.
+This code is based on https://github.com/AbdManian/RaylibSample
 
 ## How To Compile
 1. Import project in Eclipse/CDT.
