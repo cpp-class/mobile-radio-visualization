@@ -39,3 +39,9 @@ void sd_rectangle(int x, int y, int sq_size, int sq_space, int width, int height
 	}
 }
 
+void sd_frame(int x, int y, int sq_size, int sq_space, int width, int height, Color color)
+{
+
+}
+
+
