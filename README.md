@@ -3,6 +3,9 @@ Draw some shapes using small squares.
 
 This code is based on https://github.com/AbdManian/RaylibSample
 
+## Supported Shapes
+![](shapes9.gif)
+
 ## How To Compile
 1. Import project in Eclipse/CDT.
 2. Compile with ctrl+B
