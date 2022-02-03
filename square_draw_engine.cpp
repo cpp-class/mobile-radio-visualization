@@ -1,27 +1,44 @@
 #include "square_draw_engine.h"
 
+
+void draw_line(int x, int y, int sq_size, int sq_space, int length, Color color, int dx, int dy)
+{
+	for (int cnt{0}; cnt < length ; cnt++)
+	{
+		int step {sq_size + sq_space};
+		DrawRectangle(x, y, sq_size, sq_size, color);
+
+	    x += dx * step;
+	    y += dy * step;
+	}
+
+}
+
 void sd_horizontal_line(int x, int y, int size, int space, int num_sq, Color color)
 {
 
-	for (int cnt{0}; cnt < num_sq ; cnt++)
-	{
-		int step {size + space};
-		DrawRectangle(x, y, size, size, color);
-	    x += step;
-	}
+	draw_line(x, y, size, space, num_sq, color, 1, 0);
+
+//	for (int cnt{0}; cnt < num_sq ; cnt++)
+//	{
+//		int step {size + space};
+//		DrawRectangle(x, y, size, size, color);
+//	    x += step;
+//	}
 
 
 }
 
 void sd_vertical_line(int x, int y, int size, int space, int num_sq, Color color)
 {
+	draw_line(x, y, size, space, num_sq, color, 0, 1);
 
-	for(int cnt{0}; cnt<num_sq; cnt++)
-	{
-	    DrawRectangle(x, y, size, size, color);
-
-	    y += size + space;
-	}
+//	for(int cnt{0}; cnt<num_sq; cnt++)
+//	{
+//	    DrawRectangle(x, y, size, size, color);
+//
+//	    y += size + space;
+//	}
 
 }
 
@@ -60,6 +77,15 @@ void sd_rectangle(int x, int y, int sq_size, int sq_space, int width, int height
 void sd_45deg_line(int x, int y, int sq_size, int sq_space, int length, Color color)
 {
 
+	draw_line(x, y, sq_size, sq_space, length, color, 1, 1);
+
+//	for (int cnt{0}; cnt < length ; cnt++)
+//	{
+//		int step {sq_size + sq_space};
+//		DrawRectangle(x, y, sq_size, sq_size, color);
+//	    x += step;
+//	    y += step;
+//	}
 }
 
 
