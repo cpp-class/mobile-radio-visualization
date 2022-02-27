@@ -32,6 +32,10 @@
 *.app
 /Debug/
 .settings/
+
+!.settings/org.eclipse.cdt.core.prefs
+!.settings/org.eclipse.cdt.ui.prefs
+
 /linuxbuild/
 !lib/*/*.a
 /debuglinux/

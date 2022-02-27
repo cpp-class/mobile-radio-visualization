@@ -1,0 +1,41 @@
+# Sample scenario with 4 nodes
+
+
+###########################
+# General Simulation Data #
+###########################
+
+SimEnd 30                 # 30 seconds simulation
+SetMaxRadioRange 50.0     
+
+
+
+
+
+##################
+## Define Nodes ##
+##################
+
+AddNode master  400 300 square red
+
+AddNode slave1  100 50  circle green
+AddNode slave2  600 700  circle green
+AddNode slave3  500 350  circle green
+
+
+
+
+
+
+########################
+## Change Nodes Speed ##
+########################
+
+SetNodeSpeed 1 slave1 1.0 1.0
+SetNodeSpeed 2 slave2 -1.5 -1.0
+SetNodeSpeed 2 slave3 -0.3 0.2
+
+
+SetNodeSpeed 10 slave2 0 0
+
+
